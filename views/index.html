@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prometheus</title>
+    <base href="../">
+    <link rel='stylesheet' href='stylesheets/logon.css' />
+</head>
+<body>
+    <div id='content'>
+        <div id="header">
+            <div id="cls-btn"></div>
+            <div id="min-btn"></div>
+            <img src="images/prometheus.png" height="30px"/><br/>
+            <h1>Prometheus</h1>
+        </div>
+        <form class='loginholder'>
+            <input id='uname' type='text' placeholder='username'/><br/>
+            <input id='pword' type='password' placeholder='password'/><br/>
+            <input id="remember" style="float: left;" type="checkbox">
+            <div style="float: left; font-size: 12px; margin-top: 1px;">Remember me</div>
+            <input id="sub" type='submit' value="Log In"/>
+        </form>
+        <script>
+            require('../renderers/index.js');
+        </script>
+    </div>
+</body>
+</html>

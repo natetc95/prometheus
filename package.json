@@ -1,0 +1,18 @@
+{
+  "name": "projectmanager2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.6.11",
+    "electron-browser-window-options": "^1.0.3",
+    "jquery": "^3.2.1",
+    "remote": "^0.2.6"
+  }
+}

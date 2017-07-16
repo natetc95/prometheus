@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&Open+Sans');
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+#content {
+    animation: fadein 0.5s;
+    width: 220px;
+    height: 210px;
+    background: #f1f1f1;
+    -webkit-box-shadow: 0 0 5px #000000;
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    padding: 20px;
+    margin: 5px;
+}
+
+#header {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#header > h1, #header > img {
+    font-size: 24px;
+    height: 30px;
+    line-height: 0px;
+    color: #474747;
+}
+
+.loginholder {
+    margin-top: -10px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 5px;
+    border: solid 1px #B2C4D8;
+    border-radius: 2px;
+    margin: 7px 0px;
+    width: 210px;
+    transition: 0.3s;
+}
+
+input {
+    -webkit-app-region: no-drag;
+}
+
+input[type="submit"], button {
+    float: right;
+    cursor: pointer;
+    transition: 0.3s;
+    border: solid 1px #B2C4D8;
+    border-radius: 2px;
+    background: #f1f1f1;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+input[type="submit"]:hover, input[type="text"]:hover, input[type="password"]:hover, button:hover {
+    border: solid 1px #7395AE;
+}
+
+#cls-btn {
+    -webkit-app-region: no-drag;
+    background: #ff5c5c;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    border: 1px solid #e33e41;
+    color: none;
+}
+
+#cls-btn:active {
+    background: #c14645;
+    border: 1px solid #b03537;
+}
+
+#min-btn {
+    -webkit-app-region: no-drag;
+    background: #ffbd4c;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    border: 1px solid #e09e3e;
+}
+
+#min-btn:active {
+  background: #c08e38;
+  border: 1px solid #af7c33;
+}
+
+.hidden {
+    display: none;
+}
