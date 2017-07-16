@@ -37,11 +37,40 @@ function createWindow () {
 
 }
 
+function createLoader () {
+    var mainWindow = new BrowserWindow(
+    {
+        width: 410, 
+        height: 270,
+        transparent: true,
+        frame: false,
+        //resizable: false,
+        icon: 'images/prometheus.png',
+    })
+    mainWindow.loadURL(url.format({
+        pathname: path.join(__dirname, 'views/loader.html'),
+        protocol: 'file:',
+        slashes: true
+    }))
+    mainWindow.on('closed', function () {
+        mainWindow = null
+    })
+    ipcMain.once('done', function(e) {
+        mainWindow = null
+        createWindow()
+    })
+}
+
 function initialize() {
-    ipcMain.once('initcomplete', function(e) {
-        console.timeEnd('init')
+    ipcMain.on('initcomplete', function(e) {
+        try {
+            console.timeEnd('init')
+        } 
+        catch(err) {
+            console.log('The application attempted to complete initialization twice!')
+        }
     });
-    createWindow()
+    createLoader()
 }
 
 app.on('ready', initialize)
