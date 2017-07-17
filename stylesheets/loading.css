@@ -50,12 +50,11 @@ h1, h2, h3, h4 {
 .meter > span {
     display: block;
     height: 100%;
-    background-color: rgb(43,194,83);
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f0a3a3),color-stop(1, #f42323));
-	background-image: -webkit-linear-gradient(#f0a3a3, #f42323);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f0a3b3),color-stop(1, #f42322));
+	background-image: -webkit-linear-gradient(#f0a3b3, #f42322);
     position: relative;
     overflow: hidden;
-    transition: 0.10s
+    transition: 0.5s
 }
 .meter > span:after, .animate > span > span {
     content: "";
@@ -86,4 +85,12 @@ h1, h2, h3, h4 {
     100% {
         background-position: 50px 50px;
     }
+}
+
+#status {
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+    font-size: 12px;
+    margin-bottom: 15px;
 }
