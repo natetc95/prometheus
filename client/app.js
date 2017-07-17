@@ -92,16 +92,18 @@ function createLoader () {
         createLogin()
     })
     mainWindow.webContents.on('did-finish-load', () => {
-        makeLoadRequest('www.google.com', '', (str) => {
-            send(mainWindow, 50, 'Success contacting Google!')
+        makeLoadRequest('127.0.0.1', '/app/firstcontact', (str) => {
+            data = JSON.parse(str);
+            send(mainWindow, 50, data.title)
+            alert(str)
         }, () => {
             send(mainWindow, 50, 'Error contacting Google!')
         })
-        makeLoadRequest('www.nodejs.org', '', (str) => {
-            send(mainWindow, 100, 'Success contacting Node!')
-        }, () => {
-            console.log('error!')
-        })
+        // makeLoadRequest('www.nodejs.org', '', (str) => {
+        //     send(mainWindow, 100, 'Success contacting Node!')
+        // }, () => {
+        //     console.log('error!')
+        // })
     });
 }
 

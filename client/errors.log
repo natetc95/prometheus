@@ -6,3 +6,7 @@
 [1500271932031] ReferenceError: mainWindow is not defined
 [1500272174611] ReferenceError: createLogin is not defined
 [1500272190338] ReferenceError: createLogin is not defined
+[1500334338916] ReferenceError: alert is not defined
+[1500334361078] ReferenceError: alert is not defined
+[1500334377175] ReferenceError: alert is not defined
+[1500334467216] ReferenceError: alert is not defined
