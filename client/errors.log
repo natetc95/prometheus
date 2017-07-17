@@ -1,0 +1,8 @@
+[1500271473370] Error: connect ECONNREFUSED 127.0.0.1:80
+[1500271473370] Error: socket hang up
+[1500271534078] Error: connect ECONNREFUSED 127.0.0.1:80
+[1500271534079] Error: socket hang up
+[1500271931993] ReferenceError: mainWindow is not defined
+[1500271932031] ReferenceError: mainWindow is not defined
+[1500272174611] ReferenceError: createLogin is not defined
+[1500272190338] ReferenceError: createLogin is not defined
